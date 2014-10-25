@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		6552266E19F890A400D4B399 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552266D19F890A400D4B399 /* main.m */; };
 		6552267119F890A400D4B399 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552267019F890A400D4B399 /* AppDelegate.m */; };
-		6552267419F890A400D4B399 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552267319F890A400D4B399 /* ViewController.m */; };
 		6552267719F890A400D4B399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6552267519F890A400D4B399 /* Main.storyboard */; };
 		6552267919F890A400D4B399 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6552267819F890A400D4B399 /* Images.xcassets */; };
-		6552267C19F890A400D4B399 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6552267A19F890A400D4B399 /* LaunchScreen.xib */; };
 		6552268819F890A400D4B399 /* LazerWarfareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552268719F890A400D4B399 /* LazerWarfareTests.m */; };
+		65EE51B119F9CF3600B0DE26 /* MyImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE51B019F9CF3600B0DE26 /* MyImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +31,13 @@
 		6552266D19F890A400D4B399 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6552266F19F890A400D4B399 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6552267019F890A400D4B399 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6552267219F890A400D4B399 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6552267319F890A400D4B399 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6552267619F890A400D4B399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6552267819F890A400D4B399 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6552267B19F890A400D4B399 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6552268119F890A400D4B399 /* LazerWarfareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazerWarfareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6552268619F890A400D4B399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6552268719F890A400D4B399 /* LazerWarfareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LazerWarfareTests.m; sourceTree = "<group>"; };
+		65EE51AF19F9CF3600B0DE26 /* MyImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImageViewController.h; sourceTree = "<group>"; };
+		65EE51B019F9CF3600B0DE26 /* MyImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +81,10 @@
 			children = (
 				6552266F19F890A400D4B399 /* AppDelegate.h */,
 				6552267019F890A400D4B399 /* AppDelegate.m */,
-				6552267219F890A400D4B399 /* ViewController.h */,
-				6552267319F890A400D4B399 /* ViewController.m */,
 				6552267519F890A400D4B399 /* Main.storyboard */,
+				65EE51AF19F9CF3600B0DE26 /* MyImageViewController.h */,
+				65EE51B019F9CF3600B0DE26 /* MyImageViewController.m */,
 				6552267819F890A400D4B399 /* Images.xcassets */,
-				6552267A19F890A400D4B399 /* LaunchScreen.xib */,
 				6552266B19F890A400D4B399 /* Supporting Files */,
 			);
 			path = LazerWarfare;
@@ -168,6 +165,11 @@
 				TargetAttributes = {
 					6552266719F890A400D4B399 = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					6552268019F890A400D4B399 = {
 						CreatedOnToolsVersion = 6.1;
@@ -200,7 +202,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6552267719F890A400D4B399 /* Main.storyboard in Resources */,
-				6552267C19F890A400D4B399 /* LaunchScreen.xib in Resources */,
 				6552267919F890A400D4B399 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6552267419F890A400D4B399 /* ViewController.m in Sources */,
 				6552267119F890A400D4B399 /* AppDelegate.m in Sources */,
 				6552266E19F890A400D4B399 /* main.m in Sources */,
+				65EE51B119F9CF3600B0DE26 /* MyImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,14 +251,6 @@
 				6552267619F890A400D4B399 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6552267A19F890A400D4B399 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6552267B19F890A400D4B399 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -343,6 +336,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LazerWarfare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +347,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LazerWarfare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +407,7 @@
 				6552268D19F890A400D4B399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6552268E19F890A400D4B399 /* Build configuration list for PBXNativeTarget "LazerWarfareTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +416,7 @@
 				6552269019F890A400D4B399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

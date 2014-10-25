@@ -1,25 +1,108 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3BH-LD-6QA">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Navigation Controller-->
+        <scene sceneID="x5w-vT-YPo">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <navigationController navigationBarHidden="YES" id="3BH-LD-6QA" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uof-v7-jAM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ePN-Ea-FyG" kind="relationship" relationship="rootViewController" id="aTy-gy-9SM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJb-eW-QIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-385" y="92"/>
+        </scene>
+        <!--My Image View Controller-->
+        <scene sceneID="Zj2-EL-nFX">
+            <objects>
+                <viewController id="ePN-Ea-FyG" customClass="MyImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZB7-lO-Sg7"/>
+                        <viewControllerLayoutGuide type="bottom" id="BJZ-uT-gfq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e3Y-eT-GO9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appbg" translatesAutoresizingMaskIntoConstraints="NO" id="D7a-aE-3JM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="2wV-Yp-K8v">
+                                <rect key="frame" x="160" y="30" width="280" height="241"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmM-A6-klI">
+                                <rect key="frame" x="161.5" y="504.5" width="277" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="Settings" backgroundImage="yellow-button-off">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppW-qs-hKZ">
+                                <rect key="frame" x="162" y="439.5" width="277" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="Play Offline" backgroundImage="yellow-button-off">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oue-PI-6Dj">
+                                <rect key="frame" x="161" y="377.5" width="277" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="Join Existing Game" backgroundImage="yellow-button-off">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPa-w4-NEo">
+                                <rect key="frame" x="161" y="318.5" width="277" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="Start New Game" backgroundImage="yellow-button-off">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Oue-PI-6Dj" firstAttribute="top" secondItem="wPa-w4-NEo" secondAttribute="bottom" multiplier="1.05" constant="1" id="3wf-4L-X6P"/>
+                            <constraint firstItem="BJZ-uT-gfq" firstAttribute="top" secondItem="D7a-aE-3JM" secondAttribute="bottom" id="7On-OM-tdG"/>
+                            <constraint firstAttribute="centerX" secondItem="2wV-Yp-K8v" secondAttribute="centerX" id="AXE-yg-Pt8"/>
+                            <constraint firstAttribute="trailing" secondItem="D7a-aE-3JM" secondAttribute="trailing" id="CBL-qu-ASz"/>
+                            <constraint firstItem="D7a-aE-3JM" firstAttribute="leading" secondItem="e3Y-eT-GO9" secondAttribute="leading" id="Eeh-EA-lDY"/>
+                            <constraint firstAttribute="centerX" secondItem="wPa-w4-NEo" secondAttribute="centerX" id="FyE-dv-mIA"/>
+                            <constraint firstItem="vmM-A6-klI" firstAttribute="top" secondItem="ppW-qs-hKZ" secondAttribute="bottom" multiplier="1.05" constant="1" id="UX2-BN-IeG"/>
+                            <constraint firstItem="2wV-Yp-K8v" firstAttribute="top" secondItem="ZB7-lO-Sg7" secondAttribute="bottom" constant="30" id="eV3-ce-8ZM"/>
+                            <constraint firstAttribute="centerX" secondItem="Oue-PI-6Dj" secondAttribute="centerX" id="jyk-Uu-7to"/>
+                            <constraint firstItem="ppW-qs-hKZ" firstAttribute="top" secondItem="Oue-PI-6Dj" secondAttribute="bottom" multiplier="1.05" constant="1" id="m6i-eA-3wy"/>
+                            <constraint firstItem="BJZ-uT-gfq" firstAttribute="top" secondItem="vmM-A6-klI" secondAttribute="bottom" multiplier="1.1" constant="1" id="p2s-Xt-mOn"/>
+                            <constraint firstAttribute="centerX" secondItem="vmM-A6-klI" secondAttribute="centerX" id="pbL-Sc-n72"/>
+                            <constraint firstAttribute="centerX" secondItem="ppW-qs-hKZ" secondAttribute="centerX" id="qGU-lW-zKa"/>
+                            <constraint firstItem="D7a-aE-3JM" firstAttribute="top" secondItem="ZB7-lO-Sg7" secondAttribute="bottom" id="s80-0A-czf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hfW-xq-b3k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPr-jy-9rS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="351" y="88"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="appbg" width="320" height="480"/>
+        <image name="title" width="280" height="241"/>
+        <image name="yellow-button-off" width="277" height="40"/>
+    </resources>
 </document>
