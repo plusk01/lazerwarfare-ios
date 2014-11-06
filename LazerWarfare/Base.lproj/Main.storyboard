@@ -154,9 +154,33 @@
                     <view key="view" contentMode="scaleToFill" id="BQh-qY-0d3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appbg" translatesAutoresizingMaskIntoConstraints="NO" id="FS0-Hi-tkM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FS0-Hi-tkM" secondAttribute="trailing" constant="135" id="0L5-nE-yJA"/>
+                            <constraint firstItem="FS0-Hi-tkM" firstAttribute="leading" secondItem="BQh-qY-0d3" secondAttribute="leading" id="Aaa-2e-kKg"/>
+                            <constraint firstItem="FS0-Hi-tkM" firstAttribute="leading" secondItem="BQh-qY-0d3" secondAttribute="leading" constant="135" id="Fe0-yp-5FW"/>
+                            <constraint firstItem="klm-1n-P1I" firstAttribute="top" secondItem="FS0-Hi-tkM" secondAttribute="bottom" constant="9" id="Qb7-ST-JcT"/>
+                            <constraint firstAttribute="trailing" secondItem="FS0-Hi-tkM" secondAttribute="trailing" id="bAQ-Z4-4Tb"/>
+                            <constraint firstItem="FS0-Hi-tkM" firstAttribute="top" secondItem="BQh-qY-0d3" secondAttribute="top" constant="9" id="m6n-6q-kjY"/>
+                            <constraint firstItem="klm-1n-P1I" firstAttribute="top" secondItem="FS0-Hi-tkM" secondAttribute="bottom" id="nm3-VG-6CP"/>
+                            <constraint firstItem="FS0-Hi-tkM" firstAttribute="top" secondItem="Irc-g4-Wgx" secondAttribute="bottom" id="zD9-Bv-WjD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0L5-nE-yJA"/>
+                                <exclude reference="Fe0-yp-5FW"/>
+                                <exclude reference="m6n-6q-kjY"/>
+                                <exclude reference="Qb7-ST-JcT"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8SK-16-a3J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,9 +197,21 @@
                     <view key="view" contentMode="scaleToFill" id="6GL-1f-qc6">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appbg" translatesAutoresizingMaskIntoConstraints="NO" id="JBh-XF-UTv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JBh-XF-UTv" firstAttribute="top" secondItem="2o6-hl-eXB" secondAttribute="bottom" id="36r-rM-WeA"/>
+                            <constraint firstItem="JBh-XF-UTv" firstAttribute="leading" secondItem="6GL-1f-qc6" secondAttribute="leading" id="6XS-o6-7lM"/>
+                            <constraint firstItem="2DJ-hn-aO2" firstAttribute="top" secondItem="JBh-XF-UTv" secondAttribute="bottom" id="6wH-U5-6SE"/>
+                            <constraint firstAttribute="trailing" secondItem="JBh-XF-UTv" secondAttribute="trailing" id="Bx2-Rk-DUX"/>
+                        </constraints>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eec-aO-uUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -192,9 +228,21 @@
                     <view key="view" contentMode="scaleToFill" id="oIB-By-swh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appbg" translatesAutoresizingMaskIntoConstraints="NO" id="EFS-87-Wfc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LXk-Ma-DAg" firstAttribute="top" secondItem="EFS-87-Wfc" secondAttribute="bottom" id="4i7-WC-xUu"/>
+                            <constraint firstAttribute="trailing" secondItem="EFS-87-Wfc" secondAttribute="trailing" id="FE8-ln-3sT"/>
+                            <constraint firstItem="EFS-87-Wfc" firstAttribute="top" secondItem="Lw5-Vf-z4j" secondAttribute="bottom" id="HhW-eF-TqS"/>
+                            <constraint firstItem="EFS-87-Wfc" firstAttribute="leading" secondItem="oIB-By-swh" secondAttribute="leading" id="KIW-cp-nB5"/>
+                        </constraints>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I7t-D4-FXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
