@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6514E4931A0B490700559AC5 /* LWMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6514E4921A0B490700559AC5 /* LWMainViewController.m */; };
+		6514E4971A0B495300559AC5 /* LWNewGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6514E4961A0B495300559AC5 /* LWNewGameViewController.m */; };
+		6514E49A1A0B497300559AC5 /* LWSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6514E4991A0B497300559AC5 /* LWSettingsViewController.m */; };
+		6514E49D1A0B498F00559AC5 /* LWOfflineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6514E49C1A0B498F00559AC5 /* LWOfflineViewController.m */; };
+		6514E4A01A0B49A300559AC5 /* LWJoinGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6514E49F1A0B49A300559AC5 /* LWJoinGameViewController.m */; };
 		6552266E19F890A400D4B399 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552266D19F890A400D4B399 /* main.m */; };
 		6552267119F890A400D4B399 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552267019F890A400D4B399 /* AppDelegate.m */; };
 		6552267719F890A400D4B399 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6552267519F890A400D4B399 /* Main.storyboard */; };
 		6552267919F890A400D4B399 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6552267819F890A400D4B399 /* Images.xcassets */; };
 		6552268819F890A400D4B399 /* LazerWarfareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6552268719F890A400D4B399 /* LazerWarfareTests.m */; };
-		65EE51B119F9CF3600B0DE26 /* MyImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE51B019F9CF3600B0DE26 /* MyImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6514E4911A0B490700559AC5 /* LWMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LWMainViewController.h; path = controllers/LWMainViewController.h; sourceTree = "<group>"; };
+		6514E4921A0B490700559AC5 /* LWMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LWMainViewController.m; path = controllers/LWMainViewController.m; sourceTree = "<group>"; };
+		6514E4951A0B495300559AC5 /* LWNewGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LWNewGameViewController.h; path = controllers/LWNewGameViewController.h; sourceTree = "<group>"; };
+		6514E4961A0B495300559AC5 /* LWNewGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LWNewGameViewController.m; path = controllers/LWNewGameViewController.m; sourceTree = "<group>"; };
+		6514E4981A0B497300559AC5 /* LWSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LWSettingsViewController.h; path = controllers/LWSettingsViewController.h; sourceTree = "<group>"; };
+		6514E4991A0B497300559AC5 /* LWSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LWSettingsViewController.m; path = controllers/LWSettingsViewController.m; sourceTree = "<group>"; };
+		6514E49B1A0B498F00559AC5 /* LWOfflineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LWOfflineViewController.h; path = controllers/LWOfflineViewController.h; sourceTree = "<group>"; };
+		6514E49C1A0B498F00559AC5 /* LWOfflineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LWOfflineViewController.m; path = controllers/LWOfflineViewController.m; sourceTree = "<group>"; };
+		6514E49E1A0B49A300559AC5 /* LWJoinGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LWJoinGameViewController.h; path = controllers/LWJoinGameViewController.h; sourceTree = "<group>"; };
+		6514E49F1A0B49A300559AC5 /* LWJoinGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LWJoinGameViewController.m; path = controllers/LWJoinGameViewController.m; sourceTree = "<group>"; };
 		6552266819F890A400D4B399 /* LazerWarfare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazerWarfare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6552266C19F890A400D4B399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6552266D19F890A400D4B399 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -36,8 +50,6 @@
 		6552268119F890A400D4B399 /* LazerWarfareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazerWarfareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6552268619F890A400D4B399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6552268719F890A400D4B399 /* LazerWarfareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LazerWarfareTests.m; sourceTree = "<group>"; };
-		65EE51AF19F9CF3600B0DE26 /* MyImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImageViewController.h; sourceTree = "<group>"; };
-		65EE51B019F9CF3600B0DE26 /* MyImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +70,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6514E4941A0B491000559AC5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6514E49B1A0B498F00559AC5 /* LWOfflineViewController.h */,
+				6514E49C1A0B498F00559AC5 /* LWOfflineViewController.m */,
+				6514E4911A0B490700559AC5 /* LWMainViewController.h */,
+				6514E4921A0B490700559AC5 /* LWMainViewController.m */,
+				6514E4951A0B495300559AC5 /* LWNewGameViewController.h */,
+				6514E4961A0B495300559AC5 /* LWNewGameViewController.m */,
+				6514E4981A0B497300559AC5 /* LWSettingsViewController.h */,
+				6514E4991A0B497300559AC5 /* LWSettingsViewController.m */,
+				6514E49E1A0B49A300559AC5 /* LWJoinGameViewController.h */,
+				6514E49F1A0B49A300559AC5 /* LWJoinGameViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		6552265F19F890A400D4B399 = {
 			isa = PBXGroup;
 			children = (
+				6514E4941A0B491000559AC5 /* Controllers */,
 				6552266A19F890A400D4B399 /* LazerWarfare */,
 				6552268419F890A400D4B399 /* LazerWarfareTests */,
 				6552266919F890A400D4B399 /* Products */,
@@ -82,8 +112,6 @@
 				6552266F19F890A400D4B399 /* AppDelegate.h */,
 				6552267019F890A400D4B399 /* AppDelegate.m */,
 				6552267519F890A400D4B399 /* Main.storyboard */,
-				65EE51AF19F9CF3600B0DE26 /* MyImageViewController.h */,
-				65EE51B019F9CF3600B0DE26 /* MyImageViewController.m */,
 				6552267819F890A400D4B399 /* Images.xcassets */,
 				6552266B19F890A400D4B399 /* Supporting Files */,
 			);
@@ -221,8 +249,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6552267119F890A400D4B399 /* AppDelegate.m in Sources */,
+				6514E4A01A0B49A300559AC5 /* LWJoinGameViewController.m in Sources */,
 				6552266E19F890A400D4B399 /* main.m in Sources */,
-				65EE51B119F9CF3600B0DE26 /* MyImageViewController.m in Sources */,
+				6514E4971A0B495300559AC5 /* LWNewGameViewController.m in Sources */,
+				6514E49D1A0B498F00559AC5 /* LWOfflineViewController.m in Sources */,
+				6514E49A1A0B497300559AC5 /* LWSettingsViewController.m in Sources */,
+				6514E4931A0B490700559AC5 /* LWMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

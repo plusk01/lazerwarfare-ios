@@ -10,9 +10,10 @@
             <objects>
                 <navigationController navigationBarHidden="YES" id="3BH-LD-6QA" sceneMemberID="viewController">
                     <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uof-v7-jAM">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="uof-v7-jAM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -24,35 +25,47 @@
             </objects>
             <point key="canvasLocation" x="-385" y="92"/>
         </scene>
-        <!--View Controller-->
+        <!--New Game View Controller-->
         <scene sceneID="dP3-wv-62x">
             <objects>
-                <viewController id="fnz-0f-RZ8" sceneMemberID="viewController">
+                <viewController id="fnz-0f-RZ8" customClass="LWNewGameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3sw-Ie-f8f"/>
                         <viewControllerLayoutGuide type="bottom" id="dC7-jp-HJe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PVW-a9-clq">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                        <rect key="frame" x="0.0" y="44" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appbg" translatesAutoresizingMaskIntoConstraints="NO" id="zxn-yC-gLE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dC7-jp-HJe" firstAttribute="top" secondItem="zxn-yC-gLE" secondAttribute="bottom" id="33J-ma-OYA"/>
+                            <constraint firstItem="zxn-yC-gLE" firstAttribute="leading" secondItem="PVW-a9-clq" secondAttribute="leading" id="9G4-Mv-43i"/>
+                            <constraint firstItem="zxn-yC-gLE" firstAttribute="top" secondItem="3sw-Ie-f8f" secondAttribute="bottom" id="k66-1h-P7W"/>
+                            <constraint firstAttribute="trailing" secondItem="zxn-yC-gLE" secondAttribute="trailing" id="qK4-j3-QdA"/>
+                        </constraints>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="602-Kd-ow1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1277" y="-779"/>
         </scene>
-        <!--My Image View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="Zj2-EL-nFX">
             <objects>
-                <viewController id="ePN-Ea-FyG" customClass="MyImageViewController" sceneMemberID="viewController">
+                <viewController id="ePN-Ea-FyG" customClass="LWMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZB7-lO-Sg7"/>
                         <viewControllerLayoutGuide type="bottom" id="BJZ-uT-gfq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="e3Y-eT-GO9">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="44" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appbg" translatesAutoresizingMaskIntoConstraints="NO" id="D7a-aE-3JM">
@@ -63,7 +76,7 @@
                                 <rect key="frame" x="160" y="30" width="280" height="241"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmM-A6-klI">
-                                <rect key="frame" x="161.5" y="504.5" width="277" height="40"/>
+                                <rect key="frame" x="161" y="504" width="277" height="40"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="Settings" backgroundImage="yellow-button-off">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -74,7 +87,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppW-qs-hKZ">
-                                <rect key="frame" x="162" y="439.5" width="277" height="40"/>
+                                <rect key="frame" x="162" y="439" width="277" height="40"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="Play Offline" backgroundImage="yellow-button-off">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -84,18 +97,8 @@
                                     <segue destination="fU5-Ax-zs7" kind="show" id="0yB-fB-Q9m"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oue-PI-6Dj">
-                                <rect key="frame" x="161" y="377.5" width="277" height="40"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
-                                <state key="normal" title="Join Existing Game" backgroundImage="yellow-button-off">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="0vn-UJ-u3x" kind="show" id="4U2-iq-Qe5"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPa-w4-NEo">
-                                <rect key="frame" x="161" y="318.5" width="277" height="40"/>
+                                <rect key="frame" x="161" y="319" width="277" height="40"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
                                 <state key="normal" title="Start New Game" backgroundImage="yellow-button-off">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -103,6 +106,16 @@
                                 </state>
                                 <connections>
                                     <segue destination="fnz-0f-RZ8" kind="show" id="oyh-pR-1rB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oue-PI-6Dj">
+                                <rect key="frame" x="161.5" y="378" width="277" height="40"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="Join Existing Game" backgroundImage="yellow-button-off">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0vn-UJ-u3x" kind="show" id="4U2-iq-Qe5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -130,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="351" y="88"/>
         </scene>
-        <!--View Controller-->
+        <!--Join Game View Controller-->
         <scene sceneID="ALx-fp-aDu">
             <objects>
-                <viewController id="0vn-UJ-u3x" sceneMemberID="viewController">
+                <viewController id="0vn-UJ-u3x" customClass="LWJoinGameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Irc-g4-Wgx"/>
                         <viewControllerLayoutGuide type="bottom" id="klm-1n-P1I"/>
@@ -149,10 +162,10 @@
             </objects>
             <point key="canvasLocation" x="1277" y="-51"/>
         </scene>
-        <!--View Controller-->
+        <!--Offline View Controller-->
         <scene sceneID="rcJ-3Y-UwI">
             <objects>
-                <viewController id="fU5-Ax-zs7" sceneMemberID="viewController">
+                <viewController id="fU5-Ax-zs7" customClass="LWOfflineViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2o6-hl-eXB"/>
                         <viewControllerLayoutGuide type="bottom" id="2DJ-hn-aO2"/>
@@ -168,10 +181,10 @@
             </objects>
             <point key="canvasLocation" x="1277" y="673"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="80k-S7-oTT">
             <objects>
-                <viewController id="bfq-f7-18p" sceneMemberID="viewController">
+                <viewController id="bfq-f7-18p" customClass="LWSettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lw5-Vf-z4j"/>
                         <viewControllerLayoutGuide type="bottom" id="LXk-Ma-DAg"/>
